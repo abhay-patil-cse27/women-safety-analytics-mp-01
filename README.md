@@ -9,7 +9,7 @@ Women Safety Analytics is a Flask-based AI solution designed to enhance women's 
 - **SOS Alert System:** Automatically sends an SOS email to authorities if a woman exhibits distressing emotions for 30 seconds.
 - **AI Models:** Two machine learning models are integrated:
   - Emotion Detection Model (Accuracy: 72%)
-  - Gender Detection Model
+  - Gender Detection Model (Accuracy: 95%)
 - **Web Application:** A user-friendly Flask web app to run the system efficiently.
 
 ---
@@ -23,7 +23,7 @@ Women Safety Analytics is a Flask-based AI solution designed to enhance women's 
 
 ## System Requirements
 - **OS:** Windows 10
-- **Hardware:** HP Laptop with an integrated camera
+- **Hardware:** A PC with a webcam or a Laptop with an integrated camera
 - **Software Dependencies:**
   - Python 3.10.7
   - Flask
@@ -36,12 +36,6 @@ Women Safety Analytics is a Flask-based AI solution designed to enhance women's 
   - SMTP library
 
 ---
-
-## Installation and Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/women-safety-analytics.git
-   cd women-safety-analytics
 
    ## Jupyter Notebooks
 The repository contains the following Jupyter notebooks:
