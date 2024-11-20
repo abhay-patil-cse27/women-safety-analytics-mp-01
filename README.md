@@ -42,3 +42,13 @@ Women Safety Analytics is a Flask-based AI solution designed to enhance women's 
    ```bash
    git clone https://github.com/your-username/women-safety-analytics.git
    cd women-safety-analytics
+
+   ## Jupyter Notebooks
+The repository contains the following Jupyter notebooks:
+1. **Emotion_Detection.ipynb**: Training and evaluating the emotion detection model.
+2. **Gender_Detection.ipynb**: Training and evaluating the gender detection model.
+
+You can run these notebooks using Jupyter Notebook or JupyterLab:
+```bash
+jupyter notebook
+
