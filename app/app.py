@@ -40,9 +40,9 @@ class SafetyAnalytics:
         try:
             smtp_server = "smtp.gmail.com"
             smtp_port = 587
-            sender_email = "bravodj807@gmail.com"  # Replace with your email
-            receiver_email = "abhay.patil214@example.com"  # Replace with receiver email
-            password = "abp5432#1"  # Replace with your app password
+            sender_email = "xyz@gmail.com"  # Replace with your email
+            receiver_email = "abc@example.com"  # Replace with receiver email
+            password = "5432#1"  # Replace with your app password
 
             msg = MIMEMultipart()
             msg['From'] = sender_email
