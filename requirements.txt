@@ -1,0 +1,12 @@
+python==3.10.7 
+Flask
+tensorflow
+keras
+pandas
+numpy
+opencv-contrib-python
+scikit-learn
+tqdm
+matplotlib
+email-validator
+keras_preprocessing

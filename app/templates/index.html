@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Women Safety Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .status.active {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .status.alert {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Women Safety Analytics</h1>
+        <div class="status active">System Active - Monitoring</div>
+        
+        <!-- Button to trigger action -->
+        <button id="start-button">Start Video Feed</button>
+        
+        <div class="video-container" id="video-feed" style="display:none;">
+            <img src="{{ url_for('video_feed') }}" width="640" height="480">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle button click
+        document.getElementById("start-button").addEventListener("click", function() {
+            var videoFeed = document.getElementById("video-feed");
+            if (videoFeed.style.display === "none") {
+                videoFeed.style.display = "block";
+                this.textContent = "Stop Video Feed";
+            } else {
+                videoFeed.style.display = "none";
+                this.textContent = "Start Video Feed";
+            }
+        });
+    </script>
+</body>
+</html>
